@@ -101,3 +101,135 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Test the BRUMARTE multilingual pizza restaurant website with comprehensive UI and functionality testing including hero section, navigation, language switching, pizza menu, story section, gallery, contact form, mobile responsiveness, and scroll animations."
+
+frontend:
+  - task: "Hero Section Display"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HeroSection.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify hero section displays properly with background image, headline 'Authentic Neapolitan Pizza in Tetovo', subheading, and two CTA buttons"
+
+  - task: "Navigation and Smooth Scrolling"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/Navbar.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify sticky navbar with logo 'BRUMARTE' and nav links (Home, Menu, Our Story, Gallery, Visit Us, Contact) with smooth scrolling functionality"
+
+  - task: "Language Switcher Functionality"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/context/LanguageContext.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Critical feature - need to test language switching between EN/SQ/MK with proper text changes including headline translations"
+
+  - task: "Pizza Menu Section"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/PizzasSection.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify 6 pizza cards display with images, names, descriptions, and prices"
+
+  - task: "Our Story Section"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/StorySection.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify storytelling section with stats (15+ years, 50K+ pizzas, 25K+ customers) and image grid"
+
+  - task: "Gallery Section"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/GallerySection.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify masonry image gallery displays with hover effects"
+
+  - task: "Contact Form Functionality"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/ContactSection.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to test contact form submission with Name, Phone, Email, Message fields and verify toast notification appears"
+
+  - task: "Mobile Responsiveness"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/Navbar.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to test at 375px width to verify navbar collapses to hamburger menu and content stacks properly"
+
+  - task: "Scroll Animations"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/HeroSection.jsx"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "Initial testing - need to verify sections fade in smoothly when scrolling"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+
+test_plan:
+  current_focus:
+    - "Hero Section Display"
+    - "Navigation and Smooth Scrolling"
+    - "Language Switcher Functionality"
+    - "Pizza Menu Section"
+    - "Contact Form Functionality"
+    - "Mobile Responsiveness"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "testing"
+    message: "Starting comprehensive testing of BRUMARTE multilingual pizza restaurant website. Will test all major components including critical language switching functionality, UI components, and mobile responsiveness."
