@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Button } from './ui/button';
+import logo from '../images/brumarte.jpg';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -52,6 +53,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
+          <img src={logo} alt="Brumarte Logo" className='w-20 h-15'/>
           <a
             href="#home"
             className="flex items-center gap-2 group"
