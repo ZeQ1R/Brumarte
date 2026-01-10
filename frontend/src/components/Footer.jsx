@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Instagram, Facebook, MapPin, Heart } from 'lucide-react';
+import logo from '../images/brumarte-bg.png';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -28,7 +29,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h3 className="font-display text-3xl font-bold text-secondary-foreground mb-3">
-              BRUMARTE
+              <img src={logo} alt="Brumarte Logo" className='w-20 h-15'/>
             </h3>
             <p className="font-body text-secondary-foreground/70 text-sm mb-6 max-w-md">
               {t('footer.tagline')}
@@ -87,10 +88,12 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-secondary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-secondary-foreground/60">
-            {t('footer.copyright')}
+            {/* {t('footer.copyright')} */}
+            &copy; {new Date().getFullYear()} Brumarte. All rights reserved.
           </p>
           <p className="font-body text-xs text-secondary-foreground/60 flex items-center gap-1">
-            {t('footer.madeWith')} <Heart className="h-3 w-3 text-primary fill-primary" />
+              Produced by Zeqir Xheladini
+            {/* {t('footer.madeWith')} <Heart className="h-3 w-3 text-primary fill-primary" /> */}
           </p>
         </div>
       </div>
